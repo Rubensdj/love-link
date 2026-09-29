@@ -3,9 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PRA UMA PESSOA ESPECIAL ❤️</title>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>Para meu amor ❤️</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
     <style>
+        :root {
+            --primary-gradient: linear-gradient(135deg, #ff758c 0%, #ff7eb3 100%);
+            --accent-color: #ff4d6d;
+            --text-main: #4a1525;
+            --text-muted: #8c5260;
+            --bg-glass: rgba(255, 255, 255, 0.88);
+            --border-color: rgba(255, 117, 140, 0.3);
+        }
+
         * {
             margin: 0;
             padding: 0;
@@ -13,9 +22,9 @@
         }
 
         body {
-            background: linear-gradient(135deg, #fce7f3 0%, #ffffff 50%, #fecdd3 100%);
-            font-family: 'Poppins', sans-serif;
-            color: #590d22;
+            background: linear-gradient(135deg, #1a050a 0%, #4a1525 50%, #2d0b14 100%);
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            color: var(--text-main);
             min-height: 100vh;
             display: flex;
             align-items: center;
@@ -37,21 +46,21 @@
 
         .heart {
             position: absolute;
-            font-size: 2rem;
-            opacity: 0.3;
-            animation: float 6s infinite ease-in;
+            font-size: 1.5rem;
+            opacity: 0.15;
+            animation: float 8s infinite linear;
         }
 
         @keyframes float {
             0% {
-                transform: translateY(100vh) rotate(0deg);
-                opacity: 0.3;
+                transform: translateY(105vh) rotate(0deg) scale(0.8);
             }
             50% {
-                opacity: 0.5;
+                opacity: 0.3;
+                transform: translateY(50vh) rotate(180deg) scale(1.2);
             }
             100% {
-                transform: translateY(-10vh) rotate(360deg);
+                transform: translateY(-10vh) rotate(360deg) scale(0.8);
                 opacity: 0;
             }
         }
@@ -59,97 +68,98 @@
         .container {
             position: relative;
             z-index: 10;
-            max-width: 700px;
+            max-width: 680px;
             width: 100%;
         }
 
         /* Tela de entrada */
         .welcome-screen {
-            background: white;
-            border-radius: 30px;
-            box-shadow: 0 20px 60px rgba(255, 77, 109, 0.2);
-            padding: 40px 30px;
+            background: var(--bg-glass);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            border-radius: 28px;
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4);
+            padding: 45px 35px;
             text-align: center;
             display: flex;
             flex-direction: column;
             gap: 25px;
+            animation: fadeIn 0.8s ease-out;
         }
 
         .welcome-screen.hidden {
             display: none;
         }
 
-        .welcome-header {
-            background: linear-gradient(135deg, #f472b6 0%, #ec4899 50%, #f43f5e 100%);
-            padding: 30px;
-            border-radius: 20px;
-            margin: -40px -30px 0 -30px;
-        }
-
         .welcome-header h1 {
             font-family: 'Dancing Script', cursive;
-            font-size: 2.5rem;
-            color: white;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+            font-size: 3rem;
+            color: var(--accent-color);
+            margin-bottom: 10px;
+            text-shadow: 0 2px 10px rgba(255, 77, 109, 0.2);
         }
 
         .welcome-text {
-            font-size: 1.1rem;
-            color: #666;
+            font-size: 1.05rem;
+            color: var(--text-muted);
             line-height: 1.6;
         }
 
         .name-input {
             width: 100%;
-            padding: 15px;
-            border: 2px solid #fbcfe8;
-            border-radius: 12px;
-            font-size: 1rem;
-            font-family: 'Poppins', sans-serif;
+            padding: 16px 20px;
+            border: 2px solid var(--border-color);
+            border-radius: 16px;
+            font-size: 1.05rem;
+            font-family: 'Plus Jakarta Sans', sans-serif;
             text-align: center;
-            transition: all 0.3s;
+            background: rgba(255, 255, 255, 0.9);
+            color: var(--text-main);
+            transition: all 0.3s ease;
         }
 
         .name-input:focus {
             outline: none;
-            border-color: #f472b6;
-            box-shadow: 0 0 0 3px rgba(244, 114, 182, 0.1);
+            border-color: var(--accent-color);
+            box-shadow: 0 0 0 4px rgba(255, 77, 109, 0.15);
+            background: #fff;
         }
 
         .btn {
-            padding: 15px 30px;
+            padding: 16px 30px;
             border: none;
-            border-radius: 12px;
-            font-size: 1.1rem;
+            border-radius: 16px;
+            font-size: 1.05rem;
             font-weight: 600;
             cursor: pointer;
-            transition: all 0.3s;
-            font-family: 'Poppins', sans-serif;
+            transition: all 0.3s ease;
+            font-family: 'Plus Jakarta Sans', sans-serif;
         }
 
         .btn-primary {
-            background: linear-gradient(135deg, #f472b6 0%, #ec4899 100%);
+            background: var(--primary-gradient);
             color: white;
             width: 100%;
+            box-shadow: 0 10px 20px rgba(255, 77, 109, 0.3);
         }
 
-        .btn-primary:hover:not(:disabled) {
+        .btn-primary:hover {
             transform: translateY(-2px);
-            box-shadow: 0 10px 25px rgba(244, 114, 182, 0.3);
-        }
-
-        .btn-primary:disabled {
-            opacity: 0.5;
-            cursor: not-allowed;
+            box-shadow: 0 15px 25px rgba(255, 77, 109, 0.4);
         }
 
         /* Tela da cartinha */
         .letter-screen {
-            background: white;
-            border-radius: 30px;
-            box-shadow: 0 20px 60px rgba(255, 77, 109, 0.2);
+            background: var(--bg-glass);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            border-radius: 28px;
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4);
             overflow: hidden;
             display: none;
+            animation: fadeIn 0.8s ease-out;
         }
 
         .letter-screen.active {
@@ -157,162 +167,154 @@
         }
 
         .letter-header {
-            background: linear-gradient(135deg, #f472b6 0%, #ec4899 50%, #f43f5e 100%);
-            padding: 40px 30px;
+            background: var(--primary-gradient);
+            padding: 35px 30px;
             text-align: center;
         }
 
         .letter-header h1 {
             font-family: 'Dancing Script', cursive;
-            font-size: 2.2rem;
+            font-size: 2.4rem;
             color: white;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
             line-height: 1.3;
         }
 
         .letter-content {
-            padding: 40px 30px;
+            padding: 35px 30px;
             max-height: 70vh;
             overflow-y: auto;
         }
 
         .letter-text {
-            font-size: 1.15rem;
+            font-size: 1.05rem;
             line-height: 1.8;
-            color: #555;
-            margin-bottom: 20px;
-            text-align: center;
+            color: var(--text-muted);
+            margin-bottom: 18px;
+            text-align: justify;
             font-weight: 500;
         }
 
-        .letter-text:last-child {
-            margin-bottom: 0;
+        .letter-highlight {
+            color: var(--accent-color);
+            font-weight: 700;
         }
 
         .questions-section {
-            margin-top: 40px;
+            margin-top: 35px;
             padding-top: 30px;
-            border-top: 2px solid #fbcfe8;
+            border-top: 2px dashed var(--border-color);
         }
 
         .questions-title {
             text-align: center;
-            font-size: 1.5rem;
-            font-weight: 600;
-            color: #f472b6;
-            margin-bottom: 30px;
+            font-size: 1.35rem;
+            font-weight: 700;
+            color: var(--accent-color);
+            margin-bottom: 25px;
         }
 
         .question-group {
-            margin-bottom: 20px;
+            margin-bottom: 22px;
         }
 
         .question-label {
             display: block;
             font-weight: 600;
-            color: #f472b6;
+            color: var(--text-main);
             margin-bottom: 8px;
             font-size: 0.95rem;
         }
 
-        .question-input, .question-select, .question-textarea {
+        .question-select, .question-textarea {
             width: 100%;
-            padding: 12px;
-            border: 1px solid #fbcfe8;
-            border-radius: 8px;
-            font-family: 'Poppins', sans-serif;
+            padding: 14px;
+            border: 1.5px solid var(--border-color);
+            border-radius: 14px;
+            font-family: 'Plus Jakarta Sans', sans-serif;
             font-size: 0.95rem;
-            transition: all 0.3s;
+            transition: all 0.3s ease;
+            background: rgba(255, 255, 255, 0.9);
+            color: var(--text-main);
         }
 
-        .question-select, .question-input, .question-textarea {
-            background: white;
-        }
-
-        .question-input:focus, .question-select:focus, .question-textarea:focus {
+        .question-select:focus, .question-textarea:focus {
             outline: none;
-            border-color: #f472b6;
-            box-shadow: 0 0 0 2px rgba(244, 114, 182, 0.1);
+            border-color: var(--accent-color);
+            box-shadow: 0 0 0 4px rgba(255, 77, 109, 0.1);
+            background: #fff;
         }
 
         .question-textarea {
             resize: vertical;
-            min-height: 60px;
+            min-height: 80px;
         }
 
         .btn-send {
             width: 100%;
-            background: #22c55e;
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
             color: white;
-            padding: 15px;
+            padding: 16px;
             border: none;
-            border-radius: 12px;
+            border-radius: 14px;
             font-size: 1.1rem;
             font-weight: 600;
             cursor: pointer;
             margin-top: 30px;
-            transition: all 0.3s;
-            font-family: 'Poppins', sans-serif;
+            transition: all 0.3s ease;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            box-shadow: 0 10px 20px rgba(16, 185, 129, 0.3);
         }
 
         .btn-send:hover {
-            background: #16a34a;
             transform: translateY(-2px);
-            box-shadow: 0 10px 25px rgba(34, 197, 94, 0.3);
+            box-shadow: 0 15px 25px rgba(16, 185, 129, 0.4);
         }
 
         .signature {
             text-align: right;
-            margin-top: 30px;
+            margin-top: 35px;
             padding-top: 20px;
-            border-top: 2px solid #fbcfe8;
+            border-top: 1px solid var(--border-color);
         }
 
         .signature-name {
             font-family: 'Dancing Script', cursive;
-            font-size: 1.8rem;
-            color: #f472b6;
-            margin-bottom: 5px;
+            font-size: 2rem;
+            color: var(--accent-color);
         }
 
         .signature-from {
-            font-size: 1.1rem;
-            color: #f472b6;
-            font-weight: 600;
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            font-weight: 500;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(15px); }
+            to { opacity: 1; transform: translateY(0); }
         }
 
         @media (max-width: 600px) {
-            .welcome-screen, .letter-header, .letter-content {
+            .welcome-screen, .letter-content {
                 padding: 25px 20px;
             }
-
-            .welcome-header {
-                margin: -25px -20px 0 -20px;
-            }
-
             .welcome-header h1 {
-                font-size: 1.8rem;
+                font-size: 2.5rem;
             }
-
             .letter-header h1 {
-                font-size: 1.5rem;
-            }
-
-            .letter-text {
-                font-size: 1rem;
+                font-size: 1.8rem;
             }
         }
 
         ::-webkit-scrollbar {
             width: 6px;
         }
-
         ::-webkit-scrollbar-track {
-            background: #f1f1f1;
+            background: rgba(0,0,0,0.05);
         }
-
         ::-webkit-scrollbar-thumb {
-            background: #f472b6;
+            background: var(--accent-color);
             border-radius: 3px;
         }
     </style>
@@ -324,15 +326,14 @@
         <!-- Tela de Boas-vindas -->
         <div class="welcome-screen" id="welcomeScreen">
             <div class="welcome-header">
-                <h1>❤️ Quem é você? ❤️</h1>
+                <h1>Para meu amor</h1>
             </div>
-            <p class="welcome-text">Me diz seu nome para eu ler essa cartinha especial pra você 💕</p>
+            <p class="welcome-text">Digite seu nome para abrir esta cartinha especial preparada com todo carinho 💕</p>
             <input 
                 type="text" 
                 class="name-input" 
                 id="nameInput" 
                 placeholder="Seu nome aqui..."
-    id="nameInput" 
                 autocomplete="off"
             >
             <button class="btn btn-primary" onclick="startLetter()">Continuar 💕</button>
@@ -341,19 +342,22 @@
         <!-- Tela da Cartinha -->
         <div class="letter-screen" id="letterScreen">
             <div class="letter-header">
-                <h1>🌅❤️ BOM DIA, <span id="nameDisplay">AMOR</span> ❤️😍</h1>
+                <h1>BOM DIA, <span id="nameDisplay">AMOR</span> ❤️</h1>
             </div>
 
             <div class="letter-content">
-                <p class="letter-text">😏💭 Hoje é quele dia que Deus acordou e ordenou:</p>
-                <p class="letter-text" style="color: #f472b6; font-weight: 600; font-size: 1.3rem;">*Sorria menina, Porque hoje você vai arrasar*!! 😌</p>
-                <p class="letter-text">Bom dia! ☕🍞</p>
+                <p class="letter-text">Bom dia vida ❤️</p>
+                <p class="letter-text">Espero que seu dia seja incrível e abençoado igual você! 😍❤️</p>
+                
+                <p class="letter-text">E não esqueça que você é uma menina forte, corajosa, perfeita, incrível, maravilhosa, uma garota que chegou pra fazer diferença na minha vida. Uma garota cheia de sonhos e objetivos pela frente, uma garota que chegou para mudar tudo na minha vida. A única pessoa que consegue me acalmar nas horas de crise, pânico, em meio a tanta confusão você chegou na minha vida já fazendo morada. Só para lembrar que eu tô aqui por você ❤️ Se você cair... Eu vou cair com você.. 🦋🦋🦋✨🦋🦋🦋🦋🦋🦋🦋🦋</p>
+                
+                <p class="letter-text" style="text-align: center; font-weight: 700; color: var(--accent-color);">Te amo minha princesa ❤️🦋😍</p>
 
                 <div class="questions-section">
                     <div class="questions-title">Responde aqui pra mim, bb? 🥺❤️</div>
 
                     <div class="question-group">
-                        <label class="question-label">Dormiu bem, amore? ❤️🥺</label>
+                        <label class="question-label">Dormiu bem neném? ❤️🥺</label>
                         <select class="question-select" id="q1">
                             <option value="">Selecione...</option>
                             <option value="Sim, muito bem!">Sim, muito bem! ❤️</option>
@@ -363,35 +367,27 @@
                     </div>
 
                     <div class="question-group">
-                        <label class="question-label">Acordou bem? ❤️🥺</label>
+                        <label class="question-label">Sonhou comigo? 💭❤️</label>
                         <select class="question-select" id="q2">
                             <option value="">Selecione...</option>
-                            <option value="Sim, acordei ótima!">Sim, acordei ótima! 😊</option>
-                            <option value="Com um pouco de sono...">Com um pouco de sono... 😴</option>
+                            <option value="Sim, a noite toda! 😍">Sim, a noite toda! 😍</option>
+                            <option value="Sim, sonhei sim! 🤭">Sim, sonhei sim! 🤭</option>
+                            <option value="Não lembro... 🥺">Não lembro... 🥺</option>
                         </select>
                     </div>
 
                     <div class="question-group">
-                        <label class="question-label">Já tomou banho? ❤️</label>
+                        <label class="question-label">Cê tá bem? ❤️🥺</label>
                         <select class="question-select" id="q3">
                             <option value="">Selecione...</option>
-                            <option value="Sim, já tomei!">Sim, já tomei! 🚿</option>
-                            <option value="Ainda não...">Ainda não... 🧼</option>
+                            <option value="Sim, tô bem sim!">Sim, tô bem sim! 😊</option>
+                            <option value="Mais ou menos...">Mais ou menos... 🥺</option>
                         </select>
                     </div>
 
                     <div class="question-group">
-                        <label class="question-label">Já escovou os dentinhos? ❤️😁</label>
+                        <label class="question-label">Já tomou café? ☕</label>
                         <select class="question-select" id="q4">
-                            <option value="">Selecione...</option>
-                            <option value="Sim, estão limpinhos!">Sim, estão limpinhos! ✨</option>
-                            <option value="Vou escovar agora!">Vou escovar agora! 🪥</option>
-                        </select>
-                    </div>
-
-                    <div class="question-group">
-                        <label class="question-label">Já tomou café? ☕❤️</label>
-                        <select class="question-select" id="q5">
                             <option value="">Selecione...</option>
                             <option value="Sim, já tomei!">Sim, já tomei! ☕</option>
                             <option value="Ainda não...">Ainda não... 🍞</option>
@@ -399,40 +395,60 @@
                     </div>
 
                     <div class="question-group">
-                        <label class="question-label">Fez xixi? 🤭❤️</label>
+                        <label class="question-label">Já escovou os dentes? 🪥</label>
+                        <select class="question-select" id="q5">
+                            <option value="">Selecione...</option>
+                            <option value="Sim, dentes escovados!">Sim, limpinhos! ✨</option>
+                            <option value="Vou escovar agora!">Vou escovar agora! 🪥</option>
+                        </select>
+                    </div>
+
+                    <div class="question-group">
+                        <label class="question-label">Ja tomou banho? 🚿</label>
                         <select class="question-select" id="q6">
                             <option value="">Selecione...</option>
-                            <option value="Sim, fiz! kkk">Sim, fiz! kkk 😂</option>
-                            <option value="Ainda não...">Ainda não... 🚽</option>
+                            <option value="Sim, banho tomado!">Sim, banho tomado! 🚿</option>
+                            <option value="Ainda vou tomar!">Ainda vou tomar! 🧼</option>
                         </select>
                     </div>
 
                     <div class="question-group">
-                        <label class="question-label">Já colocou comida para o neném? 👶❤️</label>
+                        <label class="question-label">Já levantou? 🛏️</label>
                         <select class="question-select" id="q7">
                             <option value="">Selecione...</option>
-                            <option value="Sim, já coloquei!">Sim, já coloquei! 🍼</option>
-                            <option value="Vou colocar agora!">Vou colocar agora! 👶</option>
+                            <option value="Sim, já levantei!">Sim, já levantei! 😊</option>
+                            <option value="Ainda tô na cama...">Ainda tô na cama... 🛌</option>
                         </select>
                     </div>
 
                     <div class="question-group">
-                        <label class="question-label">Fez uma oração? 🙏❤️</label>
+                        <label class="question-label">Já deu aquele sorriso que só você tem? ❤️😍</label>
                         <select class="question-select" id="q8">
                             <option value="">Selecione...</option>
-                            <option value="Sim, agradeci a Deus!">Sim, agradeci a Deus! 🙏</option>
-                            <option value="Vou fazer agora!">Vou fazer agora! ✨</option>
+                            <option value="Sim, sorrindo muito hoje!">Sim, sorrindo muito! ✨</option>
+                            <option value="Vou dar agora!">Vou dar agora! 🤭</option>
+                        </select>
+                    </div>
+
+                    <div class="question-group">
+                        <label class="question-label">Hoje tem? 😏🤤🔥</label>
+                        <select class="question-select" id="q9">
+                            <option value="">Selecione...</option>
+                            <option value="Com certeza, absoluto! 😈">Com certeza, absoluto! 😈</option>
+                            <option value="Talvez se você merecer... 🤭">Talvez se você merecer... 🤭</option>
+                            <option value="Hoje vai rolar muito amor! 🔥">Hoje vai rolar muito amor! 🔥</option>
+                            <option value="Hoje não, tô com preguiça kkk 😴">Hoje não, tô com preguiça kkk 😴</option>
                         </select>
                     </div>
 
                     <div class="question-group">
                         <label class="question-label">Como foi sua noite? ❤️🥰</label>
-                        <textarea class="question-textarea" id="q9" placeholder="Conta pra mim..."></textarea>
+                        <textarea class="question-textarea" id="q10" placeholder="Conta pra mim..."></textarea>
                     </div>
 
                     <div class="question-group">
                         <label class="question-label">E como está sendo seu dia, bb? ❤️🥰😊</label>
-                        <textarea class="question-textarea" id="q10" placeholder="Como está indo?"></textarea>
+                        <textarea class="question-textarea" id="q11" placeholder="Como está indo?"></textarea>
                     </div>
                 </div>
 
@@ -447,21 +463,19 @@
     </div>
 
     <script>
-        // Gerar corações flutuantes
         function createFloatingHearts() {
             const container = document.getElementById('heartsContainer');
-            for (let i = 0; i < 10; i++) {
+            for (let i = 0; i < 15; i++) {
                 const heart = document.createElement('div');
                 heart.className = 'heart';
                 heart.textContent = '❤️';
                 heart.style.left = Math.random() * 100 + '%';
-                heart.style.animationDelay = Math.random() * 2 + 's';
-                heart.style.animationDuration = (Math.random() * 3 + 4) + 's';
+                heart.style.animationDelay = Math.random() * 5 + 's';
+                heart.style.animationDuration = (Math.random() * 5 + 6) + 's';
                 container.appendChild(heart);
             }
         }
 
-        // Iniciar a cartinha
         function startLetter() {
             const nameInput = document.getElementById('nameInput');
             const name = nameInput.value.trim();
@@ -476,7 +490,6 @@
             document.getElementById('nameDisplay').textContent = name.toUpperCase();
         }
 
-        // Permitir Enter para iniciar
         document.addEventListener('DOMContentLoaded', function() {
             createFloatingHearts();
             
@@ -488,7 +501,6 @@
             });
         });
 
-        // Enviar para WhatsApp
         function sendToWhatsApp() {
             const name = document.getElementById('nameDisplay').textContent;
             const phone = '5581989501999';
@@ -503,20 +515,22 @@
                 q7: document.getElementById('q7').value || 'Não respondeu',
                 q8: document.getElementById('q8').value || 'Não respondeu',
                 q9: document.getElementById('q9').value || 'Não respondeu',
-                q10: document.getElementById('q10').value || 'Não respondeu'
+                q10: document.getElementById('q10').value || 'Não respondeu',
+                q11: document.getElementById('q11').value || 'Não respondeu'
             };
 
             let texto = `*Respostas de ${name} para o Rubens* ❤️\n\n`;
             texto += `*Dormiu bem?* ${responses.q1}\n`;
-            texto += `*Acordou bem?* ${responses.q2}\n`;
-            texto += `*Já tomou banho?* ${responses.q3}\n`;
-            texto += `*Escovou os dentes?* ${responses.q4}\n`;
-            texto += `*Tomou café?* ${responses.q5}\n`;
-            texto += `*Fez xixi?* ${responses.q6}\n`;
-            texto += `*Comida do neném?* ${responses.q7}\n`;
-            texto += `*Fez oração?* ${responses.q8}\n`;
-            texto += `*Como foi a noite?* ${responses.q9}\n`;
-            texto += `*Como está o dia?* ${responses.q10}`;
+            texto += `*Sonhou comigo?* ${responses.q2}\n`;
+            texto += `*Cê tá bem?* ${responses.q3}\n`;
+            texto += `*Já tomou café?* ${responses.q4}\n`;
+            texto += `*Já escovou os dentes?* ${responses.q5}\n`;
+            texto += `*Ja tomou banho?* ${responses.q6}\n`;
+            texto += `*Já levantou?* ${responses.q7}\n`;
+            texto += `*Já deu aquele sorriso?* ${responses.q8}\n`;
+            texto += `*Hoje tem?* ${responses.q9}\n`;
+            texto += `*Como foi a noite?* ${responses.q10}\n`;
+            texto += `*Como está o dia?* ${responses.q11}`;
 
             const encodedText = encodeURIComponent(texto);
             const url = `https://wa.me/${phone}?text=${encodedText}`;
