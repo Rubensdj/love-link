@@ -89,7 +89,7 @@
         }
 
         .welcome-screen.hidden {
-            display: none;
+            display: none !important;
         }
 
         .welcome-header h1 {
@@ -163,7 +163,7 @@
         }
 
         .letter-screen.active {
-            display: block;
+            display: block !important;
         }
 
         .letter-header {
@@ -320,109 +320,4 @@
     <div class="container">
         <!-- Tela de Boas-vindas -->
         <div class="welcome-screen" id="welcomeScreen">
-            <div class="welcome-header">
-                <h1>Para você</h1>
-            </div>
-            <p class="welcome-text">Digite seu nome para abrir esta mensagem especial preparada com carinho</p>
-            <input 
-                type="text" 
-                class="name-input" 
-                id="nameInput" 
-                placeholder="Seu nome aqui..."
-                autocomplete="off"
-            >
-            <button class="btn btn-primary" onclick="startLetter()">Continuar</button>
-        </div>
-
-        <!-- Tela da Cartinha -->
-        <div class="letter-screen" id="letterScreen">
-            <div class="letter-header">
-                <h1>BOM DIA, <span id="nameDisplay">OLÁ</span></h1>
-            </div>
-
-            <div class="letter-content">
-                <p class="letter-text">Bom dia!</p>
-                <p class="letter-text">Espero que seu dia seja incrível e abençoado!</p>
-                
-                <p class="letter-text">E não esqueça que você é uma pessoa forte, corajosa, incrível e maravilhosa, alguém que chegou pra fazer diferença. Uma pessoa cheia de sonhos e objetivos pela frente, que chegou para mudar as coisas. A única pessoa que consegue trazer tranquilidade nos momentos difíceis. Só para lembrar que eu estou por aqui se precisar. 🦋✨</p>
-                
-                <p class="letter-text" style="text-align: center; font-weight: 700; color: var(--accent-color);">Tenha um excelente dia! 🦋</p>
-
-                <div class="questions-section">
-                    <div class="questions-title">Responde aqui pra mim? 😊</div>
-
-                    <div class="question-group">
-                        <label class="question-label">1. Dormiu bem?</label>
-                        <select class="question-select" id="q1">
-                            <option value="">Selecione...</option>
-                            <option value="Sim, muito bem!">Sim, muito bem!</option>
-                            <option value="Mais ou menos...">Mais ou menos...</option>
-                            <option value="Não muito...">Não muito...</option>
-                        </select>
-                    </div>
-
-                    <div class="question-group">
-                        <label class="question-label">2. Sonhou com algo bom? 💭</label>
-                        <select class="question-select" id="q2">
-                            <option value="">Selecione...</option>
-                            <option value="Sim, tive bons sonhos!">Sim, tive bons sonhos!</option>
-                            <option value="Não lembro...">Não lembro...</option>
-                        </select>
-                    </div>
-
-                    <div class="question-group">
-                        <label class="question-label">3. Já acordou faz tempo?</label>
-                        <select class="question-select" id="q3">
-                            <option value="">Selecione...</option>
-                            <option value="Sim, já acordei faz tempo! 😊">Sim, já acordei faz tempo! 😊</option>
-                            <option value="Acordei agora pouco... 😴">Acordei agora pouco... 😴</option>
-                        </select>
-                    </div>
-
-                    <div class="question-group">
-                        <label class="question-label">4. Já levantou da cama?</label>
-                        <select class="question-select" id="q4">
-                            <option value="">Selecione...</option>
-                            <option value="Sim, já levantei! 🛏️">Sim, já levantei! 🛏️</option>
-                            <option value="Ainda tô na cama... 🛌">Ainda tô na cama... 🛌</option>
-                        </select>
-                    </div>
-
-                    <div class="question-group">
-                        <label class="question-label">5. Já tomou café?</label>
-                        <select class="question-select" id="q5">
-                            <option value="">Selecione...</option>
-                            <option value="Sim, já tomei! ☕">Sim, já tomei! ☕</option>
-                            <option value="Ainda não... 🍞">Ainda não... 🍞</option>
-                        </select>
-                    </div>
-
-                    <div class="question-group">
-                        <label class="question-label">6. Já escovou os dentes?</label>
-                        <select class="question-select" id="q6">
-                            <option value="">Selecione...</option>
-                            <option value="Sim, já escovei! ✨">Sim, já escovei! ✨</option>
-                            <option value="Vou escovar agora! 🪥">Vou escovar agora! 🪥</option>
-                        </select>
-                    </div>
-
-                    <div class="question-group">
-                        <label class="question-label">7. Já tomou seu banho?</label>
-                        <select class="question-select" id="q7">
-                            <option value="">Selecione...</option>
-                            <option value="Sim, banho tomado! 🚿">Sim, banho tomado! 🚿</option>
-                            <option value="Ainda vou tomar! 🧼">Ainda vou tomar! 🧼</option>
-                        </select>
-                    </div>
-
-                    <div class="question-group">
-                        <label class="question-label">8. Já penteou o cabelo?</label>
-                        <select class="question-select" id="q8">
-                            <option value="">Selecione...</option>
-                            <option value="Sim, cabelo arrumado! 💇‍♀️">Sim, cabelo arrumado! 💇‍♀️</option>
-                            <option value="Ainda não... ✨">Ainda não... ✨</option>
-                        </select>
-                    </div>
-
-                    <div class="question-group">
-                        <label class="question-label">9.
+            <div
