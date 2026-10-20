@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Para meu amor ❤️</title>
+    <title>Para você</title>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
     <style>
         :root {
@@ -321,9 +321,9 @@
         <!-- Tela de Boas-vindas -->
         <div class="welcome-screen" id="welcomeScreen">
             <div class="welcome-header">
-                <h1>Para meu amor</h1>
+                <h1>Para você</h1>
             </div>
-            <p class="welcome-text">Digite seu nome para abrir esta cartinha especial preparada com todo carinho 💕</p>
+            <p class="welcome-text">Digite seu nome para abrir esta mensagem especial preparada com carinho</p>
             <input 
                 type="text" 
                 class="name-input" 
@@ -331,69 +331,57 @@
                 placeholder="Seu nome aqui..."
                 autocomplete="off"
             >
-            <button class="btn btn-primary" onclick="startLetter()">Continuar 💕</button>
+            <button class="btn btn-primary" onclick="startLetter()">Continuar</button>
         </div>
 
         <!-- Tela da Cartinha -->
         <div class="letter-screen" id="letterScreen">
             <div class="letter-header">
-                <h1>BOM DIA, <span id="nameDisplay">AMOR</span> ❤️</h1>
+                <h1>BOM DIA, <span id="nameDisplay">OLÁ</span></h1>
             </div>
 
             <div class="letter-content">
-                <p class="letter-text">Bom dia vida ❤️</p>
-                <p class="letter-text">Espero que seu dia seja incrível e abençoado igual você! 😍❤️</p>
+                <p class="letter-text">Bom dia!</p>
+                <p class="letter-text">Espero que seu dia seja incrível e abençoado!</p>
                 
-                <p class="letter-text">E não esqueça que você é uma menina forte, corajosa, perfeita, incrível, maravilhosa, uma garota que chegou pra fazer diferença na minha vida. Uma garota cheia de sonhos e objetivos pela frente, uma garota que chegou para mudar tudo na minha vida. A única pessoa que consegue me acalmar nas horas de crise, pânico, em meio a tanta confusão você chegou na minha vida já fazendo morada. Só para lembrar que eu tô aqui por você ❤️ Se você cair... Eu vou cair com você.. 🦋🦋🦋✨🦋🦋🦋🦋🦋🦋🦋🦋</p>
+                <p class="letter-text">E não esqueça que você é uma pessoa forte, corajosa, incrível e maravilhosa, alguém que chegou pra fazer diferença. Uma pessoa cheia de sonhos e objetivos pela frente, que chegou para mudar as coisas. A única pessoa que consegue trazer tranquilidade nos momentos difíceis. Só para lembrar que eu estou por aqui se precisar. 🦋✨</p>
                 
-                <p class="letter-text" style="text-align: center; font-weight: 700; color: var(--accent-color);">Te amo minha princesa ❤️🦋😍</p>
+                <p class="letter-text" style="text-align: center; font-weight: 700; color: var(--accent-color);">Tenha um excelente dia! 🦋</p>
 
                 <div class="questions-section">
-                    <div class="questions-title">Responde aqui pra mim, bb? 🥺❤️</div>
+                    <div class="questions-title">Responde aqui pra mim? 😊</div>
 
-                    <!-- 17 Perguntas Originais + Sonhou Comigo + Hoje Tem -->
                     <div class="question-group">
-                        <label class="question-label">1. Dormiu bem neném? ❤️🥺</label>
+                        <label class="question-label">1. Dormiu bem?</label>
                         <select class="question-select" id="q1">
                             <option value="">Selecione...</option>
-                            <option value="Sim, muito bem! ❤️">Sim, muito bem! ❤️</option>
-                            <option value="Mais ou menos... 🥺">Mais ou menos... 🥺</option>
-                            <option value="Não muito... 💔">Não muito... 💔</option>
+                            <option value="Sim, muito bem!">Sim, muito bem!</option>
+                            <option value="Mais ou menos...">Mais ou menos...</option>
+                            <option value="Não muito...">Não muito...</option>
                         </select>
                     </div>
 
                     <div class="question-group">
-                        <label class="question-label">2. Sonhou comigo? 💭❤️</label>
+                        <label class="question-label">2. Sonhou com algo bom? 💭</label>
                         <select class="question-select" id="q2">
                             <option value="">Selecione...</option>
-                            <option value="Sim, a noite toda! 😍">Sim, a noite toda! 😍</option>
-                            <option value="Sim, sonhei sim! 🤭">Sim, sonhei sim! 🤭</option>
-                            <option value="Não lembro... 🥺">Não lembro... 🥺</option>
+                            <option value="Sim, tive bons sonhos!">Sim, tive bons sonhos!</option>
+                            <option value="Não lembro...">Não lembro...</option>
                         </select>
                     </div>
 
                     <div class="question-group">
-                        <label class="question-label">3. Já acordou anjo? ❤️🥺</label>
+                        <label class="question-label">3. Já acordou faz tempo?</label>
                         <select class="question-select" id="q3">
                             <option value="">Selecione...</option>
-                            <option value="Sim, já acordei! 😊">Sim, já acordei! 😊</option>
-                            <option value="Ainda com sono... 😴">Ainda com sono... 😴</option>
+                            <option value="Sim, já acordei faz tempo! 😊">Sim, já acordei faz tempo! 😊</option>
+                            <option value="Acordei agora pouco... 😴">Acordei agora pouco... 😴</option>
                         </select>
                     </div>
 
                     <div class="question-group">
-                        <label class="question-label">4. Acordou molhada? (nem que seja de suor) 🤭💦</label>
+                        <label class="question-label">4. Já levantou da cama?</label>
                         <select class="question-select" id="q4">
-                            <option value="">Selecione...</option>
-                            <option value="Sim, suei um pouco! 😅">Sim, suei um pouco! 😅</option>
-                            <option value="Sim, toda molhada kkkk 😳">Sim, toda molhada kkkk 😳</option>
-                            <option value="Não, sequinha! 😌">Não, sequinha! 😌</option>
-                        </select>
-                    </div>
-
-                    <div class="question-group">
-                        <label class="question-label">5. Já levantou? ❤️</label>
-                        <select class="question-select" id="q5">
                             <option value="">Selecione...</option>
                             <option value="Sim, já levantei! 🛏️">Sim, já levantei! 🛏️</option>
                             <option value="Ainda tô na cama... 🛌">Ainda tô na cama... 🛌</option>
@@ -401,8 +389,8 @@
                     </div>
 
                     <div class="question-group">
-                        <label class="question-label">6. Já tomou café meu neném? ❤️</label>
-                        <select class="question-select" id="q6">
+                        <label class="question-label">5. Já tomou café?</label>
+                        <select class="question-select" id="q5">
                             <option value="">Selecione...</option>
                             <option value="Sim, já tomei! ☕">Sim, já tomei! ☕</option>
                             <option value="Ainda não... 🍞">Ainda não... 🍞</option>
@@ -410,17 +398,17 @@
                     </div>
 
                     <div class="question-group">
-                        <label class="question-label">7. Já escovou os dentinhos mais lindo desse mundo? ❤️❤️</label>
-                        <select class="question-select" id="q7">
+                        <label class="question-label">6. Já escovou os dentes?</label>
+                        <select class="question-select" id="q6">
                             <option value="">Selecione...</option>
-                            <option value="Sim, estão limpinhos! ✨">Sim, estão limpinhos! ✨</option>
+                            <option value="Sim, já escovei! ✨">Sim, já escovei! ✨</option>
                             <option value="Vou escovar agora! 🪥">Vou escovar agora! 🪥</option>
                         </select>
                     </div>
 
                     <div class="question-group">
-                        <label class="question-label">8. Já tomou seu banho gostoso? ❤️</label>
-                        <select class="question-select" id="q8">
+                        <label class="question-label">7. Já tomou seu banho?</label>
+                        <select class="question-select" id="q7">
                             <option value="">Selecione...</option>
                             <option value="Sim, banho tomado! 🚿">Sim, banho tomado! 🚿</option>
                             <option value="Ainda vou tomar! 🧼">Ainda vou tomar! 🧼</option>
@@ -428,200 +416,13 @@
                     </div>
 
                     <div class="question-group">
-                        <label class="question-label">9. Já penteou seu cabelo perfeito? ❤️</label>
-                        <select class="question-select" id="q9">
+                        <label class="question-label">8. Já penteou o cabelo?</label>
+                        <select class="question-select" id="q8">
                             <option value="">Selecione...</option>
-                            <option value="Sim, cabelo penteado! 💇‍♀️">Sim, penteadinho! 💇‍♀️</option>
+                            <option value="Sim, cabelo arrumado! 💇‍♀️">Sim, cabelo arrumado! 💇‍♀️</option>
                             <option value="Ainda não... ✨">Ainda não... ✨</option>
                         </select>
                     </div>
 
                     <div class="question-group">
-                        <label class="question-label">10. Já colocou a roupa que vc mais gosta? ❤️</label>
-                        <select class="question-select" id="q10">
-                            <option value="">Selecione...</option>
-                            <option value="Sim, com a minha favorita! 👗">Sim, com a favorita! 👗</option>
-                            <option value="Ainda escolhendo... 🤔">Ainda escolhendo... 🤔</option>
-                        </select>
-                    </div>
-
-                    <div class="question-group">
-                        <label class="question-label">11. Já se olhou no espelho e viu como vc é perfeita? ❤️❤️</label>
-                        <select class="question-select" id="q11">
-                            <option value="">Selecione...</option>
-                            <option value="Sim, olhei sim! ✨">Sim, olhei sim! ✨</option>
-                            <option value="Vou olhar agora! 🪞">Vou olhar agora! 🪞</option>
-                        </select>
-                    </div>
-
-                    <div class="question-group">
-                        <label class="question-label">12. Já arrumou a cama? ❤️</label>
-                        <select class="question-select" id="q12">
-                            <option value="">Selecione...</option>
-                            <option value="Sim, arrumadinha! 🛏️">Sim, certinho! 🛏️</option>
-                            <option value="Vou arrumar depois! 😅">Vou arrumar depois! 😅</option>
-                        </select>
-                    </div>
-
-                    <div class="question-group">
-                        <label class="question-label">13. Dobrou tudo bonitinho? ❤️</label>
-                        <select class="question-select" id="q13">
-                            <option value="">Selecione...</option>
-                            <option value="Sim, tudo dobrado! 👌">Sim, tudo organizado! 👌</option>
-                            <option value="Ainda falta um pouco...">Ainda falta um pouco...</option>
-                        </select>
-                    </div>
-
-                    <div class="question-group">
-                        <label class="question-label">14. Fez xixi? 🤭❤️</label>
-                        <select class="question-select" id="q14">
-                            <option value="">Selecione...</option>
-                            <option value="Sim, fiz! kkk 😂">Sim, fiz! kkk 😂</option>
-                            <option value="Ainda não... 🚽">Ainda não... 🚽</option>
-                        </select>
-                    </div>
-
-                    <div class="question-group">
-                        <label class="question-label">15. Já colocou comida para o neném? 👶❤️</label>
-                        <select class="question-select" id="q15">
-                            <option value="">Selecione...</option>
-                            <option value="Sim, já coloquei! 🍼">Sim, já coloquei! 🍼</option>
-                            <option value="Vou colocar agora! 👶">Vou colocar agora! 👶</option>
-                        </select>
-                    </div>
-
-                    <div class="question-group">
-                        <label class="question-label">16. Fez uma oração? 🙏❤️</label>
-                        <select class="question-select" id="q16">
-                            <option value="">Selecione...</option>
-                            <option value="Sim, agradeci a Deus! 🙏">Sim, agradeci a Deus! 🙏</option>
-                            <option value="Vou fazer agora! ✨">Vou fazer agora! ✨</option>
-                        </select>
-                    </div>
-
-                    <div class="question-group">
-                        <label class="question-label">17. Hoje tem? 😏🤤🔥</label>
-                        <select class="question-select" id="q17">
-                            <option value="">Selecione...</option>
-                            <option value="Com certeza, absoluto! 😈">Com certeza, absoluto! 😈</option>
-                            <option value="Talvez se você merecer... 🤭">Talvez se você merecer... 🤭</option>
-                            <option value="Hoje vai rolar muito amor! 🔥">Hoje vai rolar muito amor! 🔥</option>
-                            <option value="Hoje não, tô com preguiça kkk 😴">Hoje não, tô com preguiça kkk 😴</option>
-                        </select>
-                    </div>
-
-                    <div class="question-group">
-                        <label class="question-label">Como foi sua noite? ❤️🥰</label>
-                        <textarea class="question-textarea" id="q18" placeholder="Conta pra mim..."></textarea>
-                    </div>
-
-                    <div class="question-group">
-                        <label class="question-label">E como está sendo seu dia, bb? ❤️🥰😊</label>
-                        <textarea class="question-textarea" id="q19" placeholder="Como está indo?"></textarea>
-                    </div>
-                </div>
-
-                <button class="btn-send" onclick="sendToWhatsApp()">Enviar Respostas para o Rubens 🚀❤️</button>
-
-                <div class="signature">
-                    <div class="signature-from">Com todo meu amor,</div>
-                    <div class="signature-name">Rubens ❤️</div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <script>
-        function createFloatingHearts() {
-            const container = document.getElementById('heartsContainer');
-            for (let i = 0; i < 15; i++) {
-                const heart = document.createElement('div');
-                heart.className = 'heart';
-                heart.textContent = '❤️';
-                heart.style.left = Math.random() * 100 + '%';
-                heart.style.animationDelay = Math.random() * 5 + 's';
-                heart.style.animationDuration = (Math.random() * 5 + 6) + 's';
-                container.appendChild(heart);
-            }
-        }
-
-        function startLetter() {
-            const nameInput = document.getElementById('nameInput');
-            const name = nameInput.value.trim();
-
-            if (!name) {
-                alert('Por favor, digite seu nome! 💕');
-                return;
-            }
-
-            document.getElementById('welcomeScreen').classList.add('hidden');
-            document.getElementById('letterScreen').classList.add('active');
-            document.getElementById('nameDisplay').textContent = name.toUpperCase();
-        }
-
-        document.addEventListener('DOMContentLoaded', function() {
-            createFloatingHearts();
-            
-            const nameInput = document.getElementById('nameInput');
-            nameInput.addEventListener('keypress', function(e) {
-                if (e.key === 'Enter') {
-                    startLetter();
-                }
-            });
-        });
-
-        function sendToWhatsApp() {
-            const name = document.getElementById('nameDisplay').textContent;
-            const phone = '5581989501999';
-
-            const responses = {
-                q1: document.getElementById('q1').value || 'Não respondeu',
-                q2: document.getElementById('q2').value || 'Não respondeu',
-                q3: document.getElementById('q3').value || 'Não respondeu',
-                q4: document.getElementById('q4').value || 'Não respondeu',
-                q5: document.getElementById('q5').value || 'Não respondeu',
-                q6: document.getElementById('q6').value || 'Não respondeu',
-                q7: document.getElementById('q7').value || 'Não respondeu',
-                q8: document.getElementById('q8').value || 'Não respondeu',
-                q9: document.getElementById('q9').value || 'Não respondeu',
-                q10: document.getElementById('q10').value || 'Não respondeu',
-                q11: document.getElementById('q11').value || 'Não respondeu',
-                q12: document.getElementById('q12').value || 'Não respondeu',
-                q13: document.getElementById('q13').value || 'Não respondeu',
-                q14: document.getElementById('q14').value || 'Não respondeu',
-                q15: document.getElementById('q15').value || 'Não respondeu',
-                q16: document.getElementById('q16').value || 'Não respondeu',
-                q17: document.getElementById('q17').value || 'Não respondeu',
-                q18: document.getElementById('q18').value || 'Não respondeu',
-                q19: document.getElementById('q19').value || 'Não respondeu'
-            };
-
-            let texto = `*Respostas de ${name} para o Rubens* ❤️\n\n`;
-            texto += `*Dormiu bem?* ${responses.q1}\n`;
-            texto += `*Sonhou comigo?* ${responses.q2}\n`;
-            texto += `*Já acordou?* ${responses.q3}\n`;
-            texto += `*Acordou molhada?* ${responses.q4}\n`;
-            texto += `*Já levantou?* ${responses.q5}\n`;
-            texto += `*Tomou café?* ${responses.q6}\n`;
-            texto += `*Escovou os dentes?* ${responses.q7}\n`;
-            texto += `*Banho gostoso?* ${responses.q8}\n`;
-            texto += `*Penteou o cabelo?* ${responses.q9}\n`;
-            texto += `*Roupa favorita?* ${responses.q10}\n`;
-            texto += `*Olhou no espelho?* ${responses.q11}\n`;
-            texto += `*Arrumou a cama?* ${responses.q12}\n`;
-            texto += `*Dobrou tudo?* ${responses.q13}\n`;
-            texto += `*Fez xixi?* ${responses.q14}\n`;
-            texto += `*Comida do neném?* ${responses.q15}\n`;
-            texto += `*Fez oração?* ${responses.q16}\n`;
-            texto += `*Hoje tem?* ${responses.q17}\n`;
-            texto += `*Como foi a noite?* ${responses.q18}\n`;
-            texto += `*Como está o dia?* ${responses.q19}`;
-
-            const encodedText = encodeURIComponent(texto);
-            const url = `https://wa.me/${phone}?text=${encodedText}`;
-
-            window.open(url, '_blank');
-        }
-    </script>
-</body>
-</html>
+                        <label class="question-label">9.
